@@ -25,12 +25,13 @@
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#proyectos">Proyectos</a>
+      <a href="#packs">Packs</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
     <div class="header-actions">
-      <a class="header-cta" href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a class="header-cta" data-wa="Hola! Vi tu página y quiero consultar por una web." href="#contacto">WhatsApp ↗</a>
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
     </div>
   </header>
@@ -43,7 +44,7 @@
         <p class="hero-text">Creo páginas web modernas, rápidas y funcionales para marcas, emprendimientos y proyectos que quieren tener una presencia digital profesional.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#proyectos">Ver proyectos <span>→</span></a>
-          <a class="btn ghost" href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver Instagram</a>
+          <a class="btn ghost" data-wa="Hola! Vi tu página y quiero consultar por una web." href="#contacto">Pedir presupuesto</a>
         </div>
         <div class="mini-stats">
           <div><strong>HTML</strong><span>Maquetado</span></div>
@@ -71,59 +72,75 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">PORTFOLIO</p>
-          <h2>Accesos rápidos</h2>
+          <h2>Webs que ya funcionan</h2>
         </div>
         <p>Una selección de proyectos desarrollados por ALWAYSHOUSE.</p>
       </div>
 
+      <div class="filters" role="group" aria-label="Filtrar por rubro"><button type="button" class="chip active" data-filter="todos">Todos</button><button type="button" class="chip" data-filter="gastronomia">Gastronomía</button><button type="button" class="chip" data-filter="hogar">Hogar</button><button type="button" class="chip" data-filter="belleza">Belleza</button><button type="button" class="chip" data-filter="tienda">Tiendas</button><button type="button" class="chip" data-filter="servicios">Servicios</button></div>
       <div class="project-grid">
-        <article class="project-card featured">
+        <article class="project-card" data-cat="gastronomia">
+          <img class="thumb" src="assets/proyectos/pizzahoy.jpg" alt="Captura de PizzaHoy" loading="lazy" onerror="this.remove()">
           <div class="project-number">01</div><div class="project-icon">🍕</div>
           <h3>PizzaHoy</h3>
           <p>Experiencia web para una propuesta gastronómica, pensada para mostrar productos y facilitar pedidos.</p>
-          <a href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+          <a href="https://pizza-hoy.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">02</div><div class="project-icon">⚡</div>
-          <h3>EntrenaConmigo</h3>
-          <p>Concepto web deportivo orientado a entrenamiento, servicios y contacto.</p>
-          <a href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        <article class="project-card" data-cat="gastronomia">
+          <img class="thumb" src="assets/proyectos/lacocinadelaura.jpg" alt="Captura de La Cocina Laura" loading="lazy" onerror="this.remove()">
+          <div class="project-number">02</div><div class="project-icon">🍰</div>
+          <h3>La Cocina Laura</h3>
+          <p>Catálogo de pastelería artesanal con carrito de pedido y envío directo por WhatsApp.</p>
+          <a href="https://lacocinadelaura.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
+        <article class="project-card" data-cat="servicios">
+          <img class="thumb" src="assets/proyectos/cleanfull.jpg" alt="Captura de Cleanfull" loading="lazy" onerror="this.remove()">
           <div class="project-number">03</div><div class="project-icon">✦</div>
           <h3>Cleanfull</h3>
           <p>Página institucional para servicios de limpieza, con una estética clara y profesional.</p>
-          <a href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+          <a href="https://cleanfull.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">04</div><div class="project-icon">◈</div>
+        <article class="project-card" data-cat="servicios">
+          <img class="thumb" src="assets/proyectos/strive.jpg" alt="Captura de Strive" loading="lazy" onerror="this.remove()">
+          <div class="project-number">04</div><div class="project-icon">⚡</div>
+          <h3>Strive</h3>
+          <p>Sitio para un club de entrenamiento, con clases, materiales y contacto directo.</p>
+          <a href="https://strive25.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
+        </article>
+        <article class="project-card" data-cat="hogar">
+          <img class="thumb" src="assets/proyectos/mosaicos.jpg" alt="Captura de Home Mosaicos Sarandí" loading="lazy" onerror="this.remove()">
+          <div class="project-number">05</div><div class="project-icon">◈</div>
           <h3>Home Mosaicos Sarandí</h3>
           <p>Catálogo de mobiliario y superficies premium con productos y carrito de compras.</p>
-          <a href="https://github.com/lucio94cyber/Home-Mosaicos-Sarandi" target="_blank" rel="noopener">Ver proyecto ↗</a>
+          <a href="https://homemosaicosarandi.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">05</div><div class="project-icon">⌂</div>
+        <article class="project-card" data-cat="hogar">
+          <img class="thumb" src="assets/proyectos/maderaviva.jpg" alt="Captura de Madera Viva" loading="lazy" onerror="this.remove()">
+          <div class="project-number">06</div><div class="project-icon">⌂</div>
           <h3>Madera Viva</h3>
           <p>Sitio web para muebles y decoración, con foco en identidad visual y presentación de productos.</p>
-          <a href="https://lucio94cyber.github.io/MaderaVIva/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+          <a href="https://maderaviva.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">06</div><div class="project-icon">◆</div>
-          <h3>AlwaysFull</h3>
-          <p>Concepto de tienda online deportiva, diseñado para una navegación simple y visual.</p>
-          <a href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        <article class="project-card" data-cat="belleza">
+          <img class="thumb" src="assets/proyectos/navajas.jpg" alt="Captura de Navajas y Tijeras" loading="lazy" onerror="this.remove()">
+          <div class="project-number">07</div><div class="project-icon">✂</div>
+          <h3>Navajas y Tijeras</h3>
+          <p>Catálogo de navajas y tijeras para barbería y peluquería.</p>
+          <a href="https://navajasytijeras.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">07</div><div class="project-icon">◎</div>
+        <article class="project-card" data-cat="tienda">
+          <img class="thumb" src="assets/proyectos/aura.jpg" alt="Captura de AURA" loading="lazy" onerror="this.remove()">
+          <div class="project-number">08</div><div class="project-icon">◎</div>
           <h3>AURA</h3>
           <p>Propuesta digital para una marca de perfumes, con estética de producto y enfoque comercial.</p>
-          <a href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+          <a href="https://aura-perfume.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
-        <article class="project-card">
-          <div class="project-number">08</div><div class="project-icon">₣</div>
-          <h3>LF Finanzas</h3>
-          <p>Dashboard web orientado a seguimiento y visualización de información financiera.</p>
-          <a href="https://lf-finanzas.netlify.app/" target="_blank" rel="noopener">Ver proyecto ↗</a>
+        <article class="project-card" data-cat="tienda">
+          <img class="thumb" src="assets/proyectos/alwaysfull.jpg" alt="Captura de AlwaysFull" loading="lazy" onerror="this.remove()">
+          <div class="project-number">09</div><div class="project-icon">◆</div>
+          <h3>AlwaysFull</h3>
+          <p>Concepto de tienda online deportiva, diseñado para una navegación simple y visual.</p>
+          <a href="https://alwaysfull.netlify.app/" target="_blank" rel="noopener">Ver demo ↗</a>
         </article>
       </div>
     </section>
@@ -137,6 +154,19 @@
       </div>
     </section>
 
+    <section id="packs" class="packs container">
+      <div class="section-heading">
+        <div><p class="eyebrow">PACKS</p><h2>Elegí tu punto de partida</h2></div>
+        <p>El valor final depende de lo que necesites. Escribime y te paso un presupuesto sin compromiso.</p>
+      </div>
+      <div class="pack-grid">
+        <article class="pack"><h3>Landing</h3><p class="pack-for">Para presentarte y que te contacten.</p><ul><li>Una página con tus servicios</li><li>Botón directo a WhatsApp</li><li>Adaptada a celular</li></ul><a class="btn ghost" data-wa="Hola! Me interesa el pack Landing." href="#contacto">Consultar →</a></article>
+        <article class="pack hot"><span class="tag">MÁS ELEGIDO</span><h3>Catálogo + pedidos</h3><p class="pack-for">Para vender productos o servicios.</p><ul><li>Catálogo por categorías</li><li>Carrito que arma el pedido por WhatsApp</li><li>Tus fotos, logo y colores</li></ul><a class="btn primary" data-wa="Hola! Me interesa el pack Catálogo + pedidos." href="#contacto">Consultar →</a></article>
+        <article class="pack"><h3>Premium</h3><p class="pack-for">Para destacar sobre la competencia.</p><ul><li>Animaciones y efectos a medida</li><li>Secciones extra (reservas, galería, mapa)</li><li>Dominio propio y publicación</li></ul><a class="btn ghost" data-wa="Hola! Me interesa el pack Premium." href="#contacto">Consultar →</a></article>
+      </div>
+      <ol class="steps"><li><b>1</b> Me contás tu negocio</li><li><b>2</b> Me pasás fotos y logo</li><li><b>3</b> Ves la demo en pocos días</li><li><b>4</b> Ajustamos y publicamos</li></ol>
+    </section>
+
     <section id="sobre-mi" class="about container">
       <div><p class="eyebrow">SOBRE ALWAYSHOUSE</p><h2>Desarrollo web con una mirada simple.</h2></div>
       <div><p>ALWAYSHOUSE nace para transformar ideas en páginas que se vean bien, funcionen bien y sean fáciles de usar.</p><p>Trabajo principalmente con HTML, CSS y JavaScript, buscando combinar diseño, funcionalidad y una experiencia clara para cada usuario.</p></div>
@@ -146,7 +176,7 @@
       <p class="eyebrow">¿TENÉS UN PROYECTO?</p>
       <h2>Hagámoslo realidad.</h2>
       <p>Si tenés una idea, un emprendimiento o una página que quieras mejorar, podemos empezar por una conversación.</p>
-      <a class="btn primary" href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Escribime por Instagram ↗</a>
+      <div class="contact-actions"><a class="btn primary" data-wa="Hola! Quiero una página web para mi negocio." href="#contacto">Escribime por WhatsApp ↗</a><a class="btn ghost" href="https://www.instagram.com/alwayshouseweb/" target="_blank" rel="noopener">Instagram ↗</a></div>
     </section>
   </main>
 
@@ -160,6 +190,8 @@
     </div>
     <div class="copyright">© 2026 ALWAYSHOUSE. Todos los derechos reservados.</div>
   </footer>
+
+  <a class="wa-float" data-wa="Hola! Quiero consultar por una página web." href="#contacto" aria-label="Escribir por WhatsApp">💬 WhatsApp</a>
 
   <script src="assets/script.js"></script>
 </body>

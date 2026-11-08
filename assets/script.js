@@ -1,3 +1,6 @@
+// Cambiá este número por el tuyo: código de país + código de área + número, sin + ni espacios (ej. 5491112345678)
+const WHATSAPP_NUMBER = '5491164227116';
+
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header');
   const nav = document.querySelector('nav');
@@ -35,4 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle?.setAttribute('aria-expanded', 'false');
     });
   });
+
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    a.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(a.dataset.wa)}`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  const chips = document.querySelectorAll('.chip');
+  const cards = document.querySelectorAll('.project-card');
+  chips.forEach(chip => chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.toggle('active', c === chip));
+    cards.forEach(card => { card.hidden = chip.dataset.filter !== 'todos' && card.dataset.cat !== chip.dataset.filter; });
+  }));
 });
